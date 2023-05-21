@@ -1,0 +1,63 @@
+/* 
+
+*   Setiap tag pada HTML berada di dalam sebuah kotak.  properti display pada css mengatur perilaku dari kotak tersebut.
+*
+DISPLAY : INLINE, INLINE-BLOCK, BLOCK, NONE
+    * inline :  ->  Elemen HTML yang scr default
+                    tidak menambahkan baris baru ketika dibuat
+                ->  Lebar dan tinggi elemennya sebesar 
+                    konten yang ada di dalamnya
+                ->  Kita tidak dapat mengatir tinggi 
+                    dan lebar dari elemen inline
+                ->  margin dan padding hanya mempengaruhi 
+                    elemen secara horizontal, tidak vertikal
+                ->  b,strong,i,em,a,span,sub,sup,button
+                    input,label,select,textarea
+    * inline-block : -> tidak ada elemen yang defaultnya
+                        memiliki properti display
+                        inline-block, kita harus mengubah 
+                        secara manual.
+                     -> perilaku dasarnya sama dengan 
+                        inline, bedanya kita dapat mengatur lebar dan tingginya.
+    * block : -> menambahkan baris baru ketika dibuat
+              -> jika lebar tidak diatur, makan lebar
+                 defaultnya akan memenuhi parentnya.
+              -> kita dapat mengatur tinggi dan lebar
+                 dari element
+              -> di dalam element block kita dapat
+                 menyimpan tag dengan elemen inline, inline-block,atau bahkan block lagi.
+              -> h1-h6,p,ol,ul,li,form,hr,div
+
+    * none : menghilangkan value sebuah elemen
+
+
+*/
+/* ========================================================= */
+/* Lebar dan tinggi elemennya sebesar 
+             konten yang ada di dalamnya */
+a {
+  background-color: pink;
+  /* Kita dapat mengatur tinggi dan lebar
+                        dari elemen inline */
+  /* height: 200px;
+  width: 200px; */
+  /* kecuali kita ubah menjadi inline-block */
+  /* display: inline-block; */
+}
+/* 
+==========================================================
+*/
+.main {
+  width: 800px;
+  background-color: yellow;
+}
+.main h2 {
+  background-color: pink;
+}
+.main img {
+  display: none;
+}
+
+.navigasi li {
+  display: inline;
+}

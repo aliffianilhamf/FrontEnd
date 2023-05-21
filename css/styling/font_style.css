@@ -1,0 +1,24 @@
+/*
+=>  font-family = Mengatur jenis font
+=>  font-size = mengatur ukuran font(px, %, rm)
+=>  font-weight = mengatur ketebalan font
+=>  font-variant = mengubah fonts menjadi small caps
+=>  font-style = mengubah style font(italic, normal, oblique)
+=>  line-height = mengatur spasi antar baris(normal, px, em)
+
+
+
+
+
+
+*/
+h1 {
+  font-family: arial;
+  font-size: 50px;
+  font-weight: bold;
+  font-variant: small-caps;
+  font-style: italic;
+}
+p {
+  line-height: 30px;
+}

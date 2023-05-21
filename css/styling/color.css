@@ -1,0 +1,28 @@
+/* 
+color => dapaat kita tentukan menggunakan :
+    * nama warna tersebut (tomato, red, green,blue)
+    * nilai RGB (255,99,71) -> red,green,blue
+    * nilai HEX (#ff6347) -> #RRGGBB nilai terbesar adalah 'FF' dan nilai terkecil adalah 00. 
+    * nilai HSL (9, 100%, 64%) -> hue, saturation, lightness 
+        -> hue adalah derajat pada warna dari 0 - 360. (0 untuk red, 120 untuk green, 240 untuk blue) 
+        -> saturation (intensitas warna) bernilai persen(%), 0% berarti warna abu abu (gray) dan 100% berwarna penuh
+        -> lightnes bernilai persen juga, dimana 0% untuk hitam, 50% tidak terang atau gelap, dan 100% untuk putih.
+    * nilai RGBA (255, 99, 71, 0.5) -> red, green, blue, alpha . nilai alpa untuk transparan dari 0.0 - 1.0
+    * nilai HSLA (9, 100%, 64%, 0.5 -> hue, saturation, lightnes, alpha
+
+background-color => kita dapat menerapkan warna untuk background pada setiap elemen html
+    * menggunakan nama color : red, green
+    * menggunakan HEX : #ff0000
+    * menggunakan RGB : 255,255,255
+    * opacity digunakan untuk trnasparansi dari elemen
+text color => kita juga dapat menerapkan warna untuk teks juga
+border-color => kita dapat menerapkan warna untuk border elemen
+
+
+
+*/
+h1 {
+  color: tomato;
+  background-color: lightgreen;
+  border: 2px solid tomato;
+}

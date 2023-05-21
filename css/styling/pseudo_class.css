@@ -1,0 +1,46 @@
+/* 
+pseudo class = kelas semu yang dimiliki oleh sebuah elemen html yang membuat kita dapat mendefinisikan stle pada keadaan tertentu dari elemen tersebut
+
+=> :link 
+    *style default pada sebuah link (a yang memiliki href)
+=> :hover
+    *style kursor mouse berada diatas sebuah link/eleme
+=> :active
+    *style ketika sebuah link di klik(keadaan aktif)
+=> :visited
+    *style ketika sebuah link sudah pernah dikunjungi sebelumnya (menggunakan browser sama)
+*/
+.halo:link {
+  color: limegreen;
+}
+.halo:hover {
+  font-family: arial;
+  color: yellow;
+  font-size: 20px;
+}
+.halo:active {
+  font-style: italic;
+}
+.halo:visited {
+  color: red;
+}
+/* 
+=> Pseudo class yang berhubungan dengan posisi elemen(1)
+  * :first-child -> memilih elemen pertama dari sebuah parent
+  * :last-child -> memilih elemen terakhir dari sebuah paren
+  * :nth-child(n) -> memilih elemen ke-n dari sebuah parent (n = 1,2,3 / even/genap, ganjil/odd
+*/
+li:nth-child(2n) a {
+  color: green;
+}
+li:nth-child(odd) a:hover {
+  color: red;
+}
+/* 
+=> Pseudo class yang berhubungan dengan posisi elemen(2)
+  * :first-of-type -> memilih elemen pertama dari sebuah jenis/tipe tag
+  * :last-of-type -> memilih elemen terakhir dari sebuah jenis/tipe tag
+*/
+p:last-of-type {
+  color: red;
+}

@@ -1,0 +1,42 @@
+/* 
+Seleector : elemen html, id, class, complex selector
+*/
+
+/* tag html */
+body {
+  font-family: arial;
+}
+/*
+=> memeberikan value pada dua elemen yang sama kita bisa menggunakan grouping (eperator sparator(,))
+=> koma bisa di artikan sebagai dan
+*/
+h1,
+h3 {
+  color: green;
+}
+/* cara bacanya : "carikan saya tag 'a' yang ada dalam 'li' yang ada dalam 'ul' */
+ul li a {
+  color: red;
+}
+ol li a {
+  color: limegreen;
+}
+/* 
+=> Sebuah elemen html hanya boleh memiliki 1 id
+=> setiap halaman hanya boleh memiliki 1 elemen dengan id tersebut
+=> dapat digunakan juga untuk javascript
+=> sebaiknya tidak digunakan untuk css(lebih baik gunakan class)
+*/
+#p1 {
+  color: red;
+}
+
+.p2 {
+  color: limegreen;
+}
+.tambahan {
+  font-weight: bold;
+}
+p.tambahan {
+  font-size: 50px;
+}

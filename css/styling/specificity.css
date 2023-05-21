@@ -1,0 +1,28 @@
+/* 
+Menghitung nilai specificity
+
+                    inline  id  class   element
+                    0       0   0       0
+                #p= 0       1   0       0       = 100
+                p = 0       0   0       1       = 1
+                        100 vs 1 , Kuat 100
+=====================================================
+    ul#sarapan li = 0       1   0       2       = 102
+ul#sarapan li.fav = 0       1   1       2       = 112
+                        102 Vs 112, kuat 112
+
+
+    
+*/
+#p {
+  color: red;
+}
+p {
+  color: green;
+}
+ul#sarapan li {
+  color: green;
+}
+ul#sarapan li.fav {
+  color: red;
+}

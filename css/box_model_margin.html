@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <!-- 
+        => Margin : area transparan disekitar kotak(diluar border)
+        => padding : area transparan didalam kotak(antara content dan border)
+        => border : batas disekeliling content dan padding
+        => content : konten sebenarnya dalam box
+     -->
+     <style>
+        /* div{
+            display: inline-block;
+        } */
+        .satu{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /* margin: 10px; (top,right,bottom,left)
+            margin: 10px auto;(top & bottom, right & left)
+            margin: 10px auto 20px;(top, rigth & left, bottom)
+            margin: 10px 20px 30px 40px;(top,right,bottom,left) */
+            margin: 20px 30px 50px 20px;
+            /* margin-right : 30px; */
+        }
+        .dua{
+            width: 100px;
+            height: 100px;
+            background-color: lightgreen;
+            /* overlapping margin : hanya berlaku secara vertikal, dan yang akan di pakai adalah value yang lebih besar */
+            margin-top: 20px;
+            /* secara horizontal overlaping margin tidak berlaku, jadi margin dengan masing" value tetap akan ada
+            margin-left : 20px; */
+        }
+        .tiga{
+            width: 50px;
+            height: 50px;
+            background-color: lightblue;
+        }
+     </style>
+</head>
+<body>
+    <div class="satu">1</div>
+    <div class="dua">2</div>
+    <div class="tiga">3</div>
+</body>
+</html>

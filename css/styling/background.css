@@ -1,0 +1,26 @@
+/* 
+background-color => kita dapat menerapkan warna untuk background pada setiap elemen html
+    * menggunakan nama color : red, green
+    * menggunakan HEX : #ff0000
+    * menggunakan RGB : 255,255,255
+    * opacity digunakan untuk trnasparansi dari elemen
+
+background-image => menentukan gambar untuk digunakan sebagai background dari sebuah elemen. Secara default gambar akan diulang(repeat) mencakup seulurh elemen
+    * background-image : url("paper.jpg")
+    * untuk mengulang berdasar sumbu x maka kita bisa gunakan -> backround-repeat: repeat-x ;
+*/
+body {
+  background-image: url(../img/gb1.png);
+  /* background-repeat: repeat-x; */
+  /* background-repeat: repeat-y; */
+  background-repeat: no-repeat;
+  /* jika bernilai no repeat maka kita punya akses untuk properti baakcground-position 
+   background-position : top/center/bottom left/center/right */
+  background-position: top right;
+}
+h1 {
+  background-color: lightgreen;
+}
+/* shorthand :
+background : lightgreen url(../img/gb1.png) no-repeat top right;
+*/

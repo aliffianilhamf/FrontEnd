@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Float</title>
+    <style>
+        /* css reset */
+                    /* http://meyerweb.com/eric/tools/css/reset/ 
+            v2.0 | 20110126
+            License: none (public domain)
+            */
+
+            html, body, div, span, applet, object, iframe,
+            h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+            a, abbr, acronym, address, big, cite, code,
+            del, dfn, em, img, ins, kbd, q, s, samp,
+            small, strike, strong, sub, sup, tt, var,
+            b, u, i, center,
+            dl, dt, dd, ol, ul, li,
+            fieldset, form, label, legend,
+            table, caption, tbody, tfoot, thead, tr, th, td,
+            article, aside, canvas, details, embed, 
+            figure, figcaption, footer, header, hgroup, 
+            menu, nav, output, ruby, section, summary,
+            time, mark, audio, video {
+                margin: 0;
+                padding: 0;
+                border: 0;
+                font-size: 100%;
+                font: inherit;
+                vertical-align: baseline;
+            }
+            /* HTML5 display-role reset for older browsers */
+            article, aside, details, figcaption, figure, 
+            footer, header, hgroup, menu, nav, section {
+                display: block;
+            }
+            body {
+                line-height: 1;
+            }
+            ol, ul {
+                list-style: none;
+            }
+            blockquote, q {
+                quotes: none;
+            }
+            blockquote:before, blockquote:after,
+            q:before, q:after {
+                content: '';
+                content: none;
+            }
+            table {
+                border-collapse: collapse;
+                border-spacing: 0;
+            }
+            /* Akhir css reset */
+            .container{
+                width: 960px;
+                border: 1px solid black;
+                margin: auto;
+            }
+            .header{
+                margin: 20px;
+                box-sizing: border-box;
+            }
+            .header h1{
+                font-size: 50px;
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
+            ul li{
+                list-style-type:none;
+                display: inline;
+            }
+            ul li a{
+                text-decoration: none;
+                color: salmon;
+            }
+            .hero {
+                border-top: 5px solid lightskyblue;
+                border-bottom: 5px solid salmon;
+            }
+            .konten .main{
+                width: 600px;
+                margin: 20px;
+                float: left;
+                box-sizing: border-box;
+    
+            }
+            .konten .main h2{
+                font-size: 25px;
+                font-weight: bold;
+            }
+            .konten .main .penulis{
+                font-size: 14px;
+            }
+            .konten .main .penulis a{
+                text-decoration: none;
+                color: salmon;
+            }
+            .konten .main p{
+                margin-top: 20px;
+                font-size: 18px;
+            }
+            .konten .sidebar{
+                width: 300px;
+                float: right;
+                margin-top: 20px;
+                padding-left: 5px;
+                padding-right: 20px;
+                box-sizing: border-box;
+            }
+            .konten .sidebar h2{
+                font-size: 25px;
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
+            .konten .sidebar img{
+                float: left;
+                margin-right: 5px;
+            }
+            .konten .sidebar p{
+                font-family: arial;
+                font-size: 14px;
+            }
+            .cf:before,
+            .cf:after {
+                content: " "; /* 1 */
+                display: table; /* 2 */
+            }
+
+            .cf:after {
+                clear: both;
+            }
+
+            .cf {
+                *zoom: 1;
+            }
+            .footer{
+                padding: 20px;
+                background-color: black;
+                color: white;
+                text-align: center;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Mau Jadi Programer</h1>
+            <ul>
+                <li><a href="#">Home</a>|</li>
+                <li><a href="#">Menu</a>|</li>
+                <li><a href="#">Services</a>|</li>
+                <li><a href="#">About</a>|</li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="hero"><img src="img/gb1.png" width="100%" height="350px" alt=""></div>
+        <div class="konten cf">
+            <div class="main">
+                <h2>Judul Artikel</h2>
+                <div class="penulis">Ditulis Oleh <a href="https://www.instagram.com/alippwd/">aliffianIlham</a> pada 21 Mei 2023</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi nobis pariatur maxime molestias beatae sapiente voluptate fuga rem! Quod ullam alias repellendus veniam impedit corporis provident dolorum itaque doloribus sed reiciendis ea beatae modi possimus, dolorem, numquam quia voluptas natus maiores et minus ipsum a sit cum? Excepturi, molestiae aperiam!</p>
+
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat fugiat enim ullam expedita dolor omnis nobis eaque sit, nisi, accusantium quibusdam rerum sed sequi officiis ut vitae? Aspernatur quae nesciunt odio. Atque voluptates facere nemo ipsa earum nesciunt distinctio vitae. Adipisci nulla doloribus nam obcaecati! Minima harum facilis saepe? Ducimus nisi laudantium at culpa sapiente nemo quia. Excepturi maxime laudantium alias doloremque placeat veniam facere omnis tempore, molestias vel. Veniam placeat fugiat illo nostrum, aliquam quibusdam eligendi dolorem est labore eum ex quidem iste magni necessitatibus ducimus ab cumque exercitationem, consequuntur ipsum molestias sed rerum nesciunt quos architecto? Quibusdam, aliquam?</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi ullam repellat eum reprehenderit, aut perspiciatis fuga atque cumque quisquam maxime eius eligendi reiciendis mollitia, fugiat error aliquam numquam quae dignissimos aliquid, laborum ex eveniet corrupti tempora. Voluptate commodi deleniti quae sit fugit totam officiis repellat nemo aspernatur, natus ducimus temporibus nulla deserunt, soluta, necessitatibus non illum. Sapiente accusantium distinctio, fugit eveniet assumenda quod, dolores, repellat hic pariatur labore quasi voluptatibus. Quaerat dolorum cupiditate vel pariatur omnis doloremque maiores incidunt voluptates excepturi consectetur non possimus provident ex fuga repellat earum rerum illum, molestiae perferendis ratione. Debitis animi minus aliquam doloremque temporibus?</p>
+            </div>
+            <div class="sidebar cf">
+                <h2>Tentang Penulis</h2>
+                <img src="img/alippp.jpg" width="80px" height="90px" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas asperiores dignissimos dicta cum necessitatibus, eaque ducimus nemo voluptas iure officiis, recusandae maxime modi assumenda ipsum alias facere quasi ex quibusdam corrupti molestiae! Harum quisquam dolorum doloribus! Aperiam reprehenderit et sapiente odit quibusdam aliquam repellat odio animi molestiae incidunt! Corporis, ducimus!</p>
+            </div>
+            
+        </div>
+        <div class="footer">
+            <p>&copy;2023 all rights reserved</p>
+        </div>
+    </div>
+</body>
+</html>

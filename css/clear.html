@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clear</title>
+    <style>
+        .container{
+            width: 800px;
+            margin:20px auto;
+            padding: 10px;
+            border: 1px solid black;
+        }
+        .satu{
+            width: 150px;
+            height: 500px;
+            background-color: salmon;
+            float: left;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .dua{
+            width: 500px;
+            height: 500px;
+            background-color: limegreen;
+            float: left;
+        }
+        .tiga{
+            width: 150px;
+            height: 500px;
+            background-color: lightblue;
+            float: left;
+        }
+
+       /*dengan clearfix*/
+        /**
+        * For modern browsers
+        * 1. The space content is one way to avoid an Opera bug when the
+        *    contenteditable attribute is included anywhere else in the document.
+        *    Otherwise it causes space to appear at the top and bottom of elements
+        *    that are clearfixed.
+        * 2. The use of `table` rather than `block` is only necessary if using
+        *    `:before` to contain the top-margins of child elements.
+        */
+        .cf:before,
+        .cf:after {
+            content: " "; /* 1 */
+            display: table; /* 2 */
+        }
+
+        .cf:after {
+            clear: both;
+        }
+
+        /**
+        * For IE 6/7 only
+        * Include this rule to trigger hasLayout and contain floats.
+        */
+        .cf {
+            *zoom: 1;
+        }
+        .containerDua{
+            width: 600px;
+            border: 1px solid black;
+            margin:20px auto;
+            padding: 10px;
+        }
+        .kotak{
+            width: 80px;
+            height: 80px;
+            background-color: salmon;
+            margin: 2px;
+            text-align: center;
+            line-height: 80px;
+            font-size: 40px;
+            float: right;
+        }
+        .clear{
+            clear: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="container cf">
+        <div class="satu"></div>
+        <div class="dua"></div>
+        <div class="tiga"></div>
+
+        <div class="clear"></div>
+    </div>
+
+        <!-- tambahkan class cf pada element yang ingin di clear -->
+    <div class="containerDua ">
+        <div class="kotak">1</div>
+        <div class="kotak">2</div>
+        <div class="kotak">3</div>
+        <div class="kotak">4</div>
+        <div class="kotak">5</div>
+        <div class="kotak">6</div>
+        <div class="kotak">7</div>
+        <div class="kotak">8</div>
+        <div class="kotak">9</div>
+        <div class="kotak">10</div>
+        <div class="clear"></div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, voluptatum doloribus ex voluptatem vitae magnam. Ullam, sequi quod perferendis qui sapiente, nisi eius porro accusantium, officia numquam esse enim vel.</p>
+    </div>
+   
+</body>
+</html>
